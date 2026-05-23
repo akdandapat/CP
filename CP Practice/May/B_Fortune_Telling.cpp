@@ -7,6 +7,9 @@ Author: ARPANN
 -------
 dppp...
 always fukking remeber to clear global vars and DSs....
+
+nuhhh...dp oto space pabe na bruhh
+parity matching types...
 */
 
 #define ll long long
