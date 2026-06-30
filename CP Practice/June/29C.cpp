@@ -10,7 +10,6 @@ void solve(){
     cin>>n;
 
     vll ans;
-
     map<ll,vll>mp;
 
     for(ll i=0;i<n;i++){
