@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Author:ARPANN
-2242
+465d
 */
 
 #define ll long long
@@ -11,8 +11,22 @@ Author:ARPANN
 #define endl '\n'
 
 void solve(){
+    ll x,y,k;
+    cin>>x>>y>>k;
     
+    ll ans=0;
+    while(x!=y){
+        if(x>y){
+            x/=k;
+        }
+        else{
+            y/=k;
+        }
+        ans++;
+    }
+    cout<<ans<<endl;
 }
+
 
 int main(){
     ios::sync_with_stdio(false);

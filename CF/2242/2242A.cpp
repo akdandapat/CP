@@ -11,7 +11,21 @@ Author:ARPANN
 #define endl '\n'
 
 void solve(){
-    
+    ll n;
+    cin>>n;
+
+    ll b=0;
+    ll c=0;
+    for(ll i=0;i<n;i++){
+        ll a;
+        cin>>a;
+
+        if(a>1) b++;
+        if(a>2) c=1;
+    }
+
+    if(c || b>1) cout<<"YES"<<endl;
+    else cout<<"NO"<<endl;
 }
 
 int main(){

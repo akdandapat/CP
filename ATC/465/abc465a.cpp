@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Author:ARPANN
-2242
+465a
 */
 
 #define ll long long
@@ -11,7 +11,14 @@ Author:ARPANN
 #define endl '\n'
 
 void solve(){
-    
+    ll a,b;
+    cin>>a>>b;
+
+    if(3*a>2*b){
+        cout<<"Yes"<<endl;
+        return;
+    }
+    cout<<"No"<<endl;
 }
 
 int main(){
@@ -19,7 +26,7 @@ int main(){
     cin.tie(nullptr);
     
     ll t=1;
-    cin>>t;
+    //cin>>t;
     while(t--)
         solve();
         
