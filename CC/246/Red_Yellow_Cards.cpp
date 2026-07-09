@@ -11,17 +11,19 @@ Author:ARPANN
 #define endl '\n'
 
 void solve(){
-    ll n;
-    vll a(n);
+    ll r,y;
+    cin>>r>>y;
 
-    for(ll &num:a) cin>>num;
-
-    ll ans=-1;
-    for(ll i=0;i<n-1;i++){
-        ll val=min(a[i],a[i+1]);
-        ans=max(ans,val);
+    ll ans=0;
+    while(r && y){
+        y--;
+        r--;
+        ans+=1;
     }
 
+    ans+=r;
+    ans+=y/2;
+    
     cout<<ans<<endl;
 }
 

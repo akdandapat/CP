@@ -12,18 +12,22 @@ Author:ARPANN
 
 void solve(){
     ll n;
-    vll a(n);
+    cin>>n;
 
-    for(ll &num:a) cin>>num;
+    ll ans=0,cur=0;
 
-    ll ans=-1;
-    for(ll i=0;i<n-1;i++){
-        ll val=min(a[i],a[i+1]);
-        ans=max(ans,val);
+    for(ll i=0;i<n;i++){
+        ll a;
+        cin>>a;
+
+        cur=max(cur,a);
+        ans+=cur-a;
     }
 
     cout<<ans<<endl;
 }
+
+
 
 int main(){
     ios::sync_with_stdio(false);

@@ -12,6 +12,7 @@ Author:ARPANN
 
 void solve(){
     ll n;
+    cin>>n;
     vll a(n);
 
     for(ll &num:a) cin>>num;
