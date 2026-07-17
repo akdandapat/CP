@@ -3,7 +3,7 @@ using namespace std;
 
 /*
 Author:ARPANN
-246
+2246
 */
 
 #define ll long long
@@ -12,17 +12,9 @@ Author:ARPANN
 
 void solve(){
     ll n;
+    cin>>n
+
     vll a(n);
-
-    for(ll &num:a) cin>>num;
-
-    ll ans=-1;
-    for(ll i=0;i<n-1;i++){
-        ll val=min(a[i],a[i+1]);
-        ans=max(ans,val);
-    }
-
-    cout<<ans<<endl;
 }
 
 int main(){
